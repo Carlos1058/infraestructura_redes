@@ -2,6 +2,7 @@ services:
   server1:
     image: ubuntu:22.04
     container_name: Server1
+    privileged: true
     tty: true
     stdin_open: true
     networks:
@@ -13,6 +14,7 @@ services:
   server2:
     image: ubuntu:22.04
     container_name: Server2
+    privileged: true
     tty: true
     stdin_open: true
     networks:
@@ -24,6 +26,7 @@ services:
   server3:
     image: ubuntu:22.04
     container_name: Server3
+    privileged: true
     tty: true
     stdin_open: true
     networks:
